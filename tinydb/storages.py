@@ -113,7 +113,7 @@ class JSONStorage(Storage):
             touch(path, create_dirs=create_dirs)
 
         # Open the file for reading/writing
-        self._handle = open(path, mode=self._mode, encoding=encoding)
+        self._handle = open(path, mode="r", encoding=encoding)
 
     def close(self) -> None:
         self._handle.close()
