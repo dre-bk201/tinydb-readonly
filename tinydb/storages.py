@@ -29,7 +29,7 @@ def touch(path: str, create_dirs: bool):
 
     # Create the file by opening it in 'a' mode which creates the file if it
     # does not exist yet but does not modify its contents
-    with open(path, 'a'):
+    with open(path, 'r'):
         pass
 
 
